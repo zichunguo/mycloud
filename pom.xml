@@ -84,6 +84,7 @@
 		<module>mycloud-api</module>
 		<module>mycloud-provider-dept-8001</module>
 		<module>mycloud-consumer-dept-8002</module>
+		<module>mycloud-eureka-7001</module>
 	</modules>
 	
 </project>
