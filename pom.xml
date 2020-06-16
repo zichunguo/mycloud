@@ -104,8 +104,12 @@
 	<modules>
 		<module>mycloud-api</module>
 		<module>mycloud-provider-dept-8001</module>
-		<module>mycloud-consumer-dept-8002</module>
+		<module>mycloud-consumer-dept-9001</module>
 		<module>mycloud-eureka-7001</module>
+		<module>mycloud-eureka-7002</module>
+		<module>mycloud-eureka-7003</module>
+		<module>mycloud-provider-dept-8002</module>
+		<module>mycloud-provider-dept-8003</module>
 	</modules>
 	
 </project>
