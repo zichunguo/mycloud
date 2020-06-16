@@ -1,0 +1,9 @@
+server: 
+  port: 9001
+
+eureka: 
+  client: # 客户端注册进 eureka 服务列表
+    register-with-eureka: false
+    service-url: 
+#      defaultZone: http://localhost:7001/eureka
+      defaultZone: http://eureka7001:7001/eureka,http://eureka7002:7002/eureka,http://eureka7003:7003/eureka

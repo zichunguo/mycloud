@@ -110,6 +110,7 @@
 		<module>mycloud-eureka-7003</module>
 		<module>mycloud-provider-dept-8002</module>
 		<module>mycloud-provider-dept-8003</module>
+		<module>mycloud-consumer-dept-feign</module>
 	</modules>
 	
 </project>
