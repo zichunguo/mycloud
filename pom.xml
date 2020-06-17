@@ -9,8 +9,8 @@
 	<packaging>pom</packaging>
 	
 	<properties>
-		<spring-cloud.version>Hoxton.SR5</spring-cloud.version>
-		<spring-boot.version>2.2.1.RELEASE</spring-boot.version>
+		<spring-cloud.version>Greenwich.SR5</spring-cloud.version>
+		<spring-boot.version>2.1.15.RELEASE</spring-boot.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
 		<maven.compiler.source>1.8</maven.compiler.source>
@@ -111,6 +111,8 @@
 		<module>mycloud-provider-dept-8002</module>
 		<module>mycloud-provider-dept-8003</module>
 		<module>mycloud-consumer-dept-feign</module>
+		<module>mycloud-provider-dept-hystrix-8001</module>
+		<module>mycloud-consumer-hystrix-dashboard</module>
 	</modules>
 	
 </project>

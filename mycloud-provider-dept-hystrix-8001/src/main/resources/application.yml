@@ -1,0 +1,44 @@
+server: 
+  port: 8001
+
+management: 
+  endpoints:
+    web:
+      exposure:
+        include: '*'  # 配置此项完成数据监控，无需再配置注入 HystrixMetricsStreamServlet
+        
+mybatis: 
+  config-location: classpath:mybatis/mybatis.cfg.xml    # mybatis 配置文件所在路径
+  type-aliases-package: com.cloud.test.bean             # 所有 Entity 别名类所在包
+  mapper-locations:
+  - classpath:mybatis/mapper/**/*.xml                   # mapper 映射文件
+
+spring: 
+  application: 
+    name: mycloud-dept
+  datasource: 
+    type: com.alibaba.druid.pool.DruidDataSource        # 当前数据库操作类型
+    driver-class-name: org.gjt.mm.mysql.Driver          # mysql 驱动包 com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test               # 数据库名称
+    username: root
+    password: root
+    dbcp2: 
+      min-idle: 5                                       # 数据库连接池的最小维持连接数
+      initial-size: 5                                   # 初始化连接数
+      max-total: 5                                      # 最大连接数
+      max-wait-millis: 200                              # 等待连接获取的最大超时时间
+
+eureka: 
+  client: # 客户端注册进 eureka 服务列表
+    service-url: 
+#      defaultZone: http://localhost:7001/eureka
+      defaultZone: http://eureka7001:7001/eureka,http://eureka7002:7002/eureka,http://eureka7003:7003/eureka
+  instance: 
+    prefer-ip-address: true # 使用ip地址注册
+    instance-id: mycloud-dept-hystrix-8001  # 指定服务id，添加 hystrix 有关说明
+
+info:
+  app.name: mycloud
+  company.name: guo.org
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$

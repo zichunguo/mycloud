@@ -1,6 +1,10 @@
 server: 
   port: 9001
 
+feign:
+  hystrix:
+    enabled: true
+
 eureka: 
   client: # 客户端注册进 eureka 服务列表
     register-with-eureka: false
