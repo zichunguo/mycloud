@@ -114,6 +114,10 @@
 		<module>mycloud-provider-dept-hystrix-8001</module>
 		<module>mycloud-consumer-hystrix-dashboard</module>
 		<module>mycloud-zuul-gateway-9527</module>
+		<module>mycloud-config-3344</module>
+		<module>mycloud-config-client-3355</module>
+		<module>mycloud-config-client-eureka-7001</module>
+		<module>mycloud-config-client-dept-8001</module>
 	</modules>
 	
 </project>

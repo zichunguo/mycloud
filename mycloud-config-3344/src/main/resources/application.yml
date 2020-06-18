@@ -1,0 +1,13 @@
+server: 
+  port: 3344
+
+spring: 
+  application: 
+    name: mycloud-config
+  cloud: 
+    config: 
+      server: 
+        git: 
+          uri: https://github.com/zichunguo/mycloud-config.git  # GitHub仓库地址
+          username: zichunguo
+          password: ggg.0314

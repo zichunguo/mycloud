@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    config:
+      name: mycloud-config-client   # 需要从 GitHub 上读取的资源文件名称，注意没有 yml 后缀
+      profile: dev    # 本次访问的配置项
+      label: master
+      uri: http://localhost:3344    # 本微服务启动后先找3344号服务，即 SpringCloudConfig 的服务端，通过 SpringCloudConfig 获取 GitHub 的服务地址
+      username: zichunguo
+      password: ggg.0314
