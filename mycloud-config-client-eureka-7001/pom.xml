@@ -10,6 +10,11 @@
 	<artifactId>mycloud-config-client-eureka-7001</artifactId>
 	
 	<dependencies>
+		<!-- SpringCloud Config -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-config-client</artifactId>
+		</dependency>
 		<!-- eureka-server 服务端 -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>

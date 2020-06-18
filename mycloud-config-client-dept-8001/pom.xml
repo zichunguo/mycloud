@@ -10,6 +10,11 @@
 	<artifactId>mycloud-config-client-dept-8001</artifactId>
 	
 	<dependencies>
+		<!-- SpringCloud Config -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-config-client</artifactId>
+		</dependency>
 		<!-- 引入自己定义的api通用包，可以使用Dept部门Entity -->
 		<dependency>
 			<groupId>com.cloud.test</groupId>
