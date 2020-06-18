@@ -113,6 +113,7 @@
 		<module>mycloud-consumer-dept-feign</module>
 		<module>mycloud-provider-dept-hystrix-8001</module>
 		<module>mycloud-consumer-hystrix-dashboard</module>
+		<module>mycloud-zuul-gateway-9527</module>
 	</modules>
 	
 </project>
