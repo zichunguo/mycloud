@@ -10,15 +10,6 @@
 	<artifactId>mycloud-consumer-dept-feign</artifactId>
 	
 	<dependencies>
-		<dependency><!-- 引入自己定义的api通用包，可以使用Dept部门Entity -->
-			<groupId>com.cloud.test</groupId>
-			<artifactId>mycloud-api</artifactId>
-			<version>${project.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
 		<!-- Feign 相关依赖 -->
 		<dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -37,7 +28,16 @@
 			<groupId>org.springframework.cloud</groupId>
         	<artifactId>spring-cloud-starter-config</artifactId>
 		</dependency>
-		
+		<!-- 引入自己定义的api通用包，可以使用Dept部门Entity -->
+		<dependency>
+			<groupId>com.cloud.test</groupId>
+			<artifactId>mycloud-api</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
 		<!-- 热部署，修改后立即生效 -->
 		<dependency>
 			<groupId>org.springframework</groupId>

@@ -10,18 +10,12 @@
 	<artifactId>mycloud-provider-dept-hystrix-8001</artifactId>
 	
 	<dependencies>
-		<!-- 引入自己定义的api通用包，可以使用Dept部门Entity -->
-		<dependency>
-			<groupId>com.cloud.test</groupId>
-			<artifactId>mycloud-api</artifactId>
-			<version>${project.version}</version>
-		</dependency>
 		<!-- Hystrix 依赖 -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
 		</dependency>
-		<!-- 将微服务 provider 侧注册进 eureka -->
+		<!-- eureka 依赖-客户端，将微服务 provider 注册进 eureka -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
         	<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
@@ -36,7 +30,12 @@
 			<groupId>org.springframework.boot</groupId>
         	<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
-		
+		<!-- 引入自己定义的api通用包，可以使用Dept部门Entity -->
+		<dependency>
+			<groupId>com.cloud.test</groupId>
+			<artifactId>mycloud-api</artifactId>
+			<version>${project.version}</version>
+		</dependency>
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>

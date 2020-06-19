@@ -5,15 +5,6 @@ spring:
   application:
     name: mycloud-zuul-gateway
 
-eureka: 
-  client: # 客户端注册进 eureka 服务列表
-    service-url: 
-#      defaultZone: http://localhost:7001/eureka
-      defaultZone: http://eureka7001:7001/eureka,http://eureka7002:7002/eureka,http://eureka7003:7003/eureka
-  instance: 
-    prefer-ip-address: true # 使用ip地址注册
-    instance-id: gateway-9527.com  # 指定服务id，添加 hystrix 有关说明
-
 zuul:
   prefix: /mycloud  # 统一前缀
 #  ignored-services: mycloud-dept # 忽略单个原始服务映射
@@ -21,6 +12,15 @@ zuul:
   routes:
     mydept.serviceId: mycloud-dept
     mydept.path: /mydept/**
+
+eureka: 
+  client: # 客户端注册进 eureka 服务列表
+    service-url: 
+#      defaultZone: http://localhost:7001/eureka
+      defaultZone: http://eureka7001:7001/eureka,http://eureka7002:7002/eureka,http://eureka7003:7003/eureka
+  instance: 
+    prefer-ip-address: true # 使用ip地址注册
+    instance-id: gateway-9527  # 指定服务id，添加 hystrix 有关说明
 
 info:
   app.name: chun-mycloud
